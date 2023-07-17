@@ -1,0 +1,60 @@
+.App-container{
+    width: 100%;
+    min-width: 500px;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.form-container{
+ position: fixed;
+ width: 100%;
+ min-height: 100vh;
+ background: #0005;
+ z-index: 1;
+ top: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center ;
+ backdrop-filter: blur(2px);
+ transition: 0.2s ease-out;
+
+}
+.form-close{
+    transform: translateY(-100%);
+}
+.App-title{
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    background-color: #00000090;
+    padding: 0.2em;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+}
+.App-btn{
+    font-size: 1.2rem;
+    color: white;
+    padding: 0.5em 2em;
+    background-color: #555a88;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+.App-btn:active:hover{
+    filter: brightness(1.2);
+    transform: scale(0.95);
+}
+.users-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 300px);
+    max-width: 1200px;
+    gap: 2em;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3em;
+}
